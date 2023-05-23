@@ -12,7 +12,6 @@ export const App = () => {
   return (
     <div
       style={{
-        // height: '100vh',
         display: 'flex',
         gap: '40px',
         flexDirection: 'column',
@@ -24,7 +23,7 @@ export const App = () => {
       }}
     >
       <Profile {...user}/>
-      <Statistics data={data}/>
+      <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends}/>
       <TransactionHistory items={transactions} />
     </div>

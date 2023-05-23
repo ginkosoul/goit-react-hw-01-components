@@ -39,20 +39,3 @@ export const Percentage = styled.span`
     font-size: 24px;
     text-align: center;
 `
-
-// const switchColor = ({p}) => {
-//     switch (p) {
-//         case ".docx":
-//             return getRandomHexColor();
-//         case ".pdf":
-//             return getRandomHexColor();
-//         case ".mp3":
-//             return getRandomHexColor();
-//         case ".psd":
-//             return getRandomHexColor();
-//         case ".pdf":
-//             return getRandomHexColor();
-//         default:
-//             return getRandomHexColor();
-//     }
-// }

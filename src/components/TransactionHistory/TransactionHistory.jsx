@@ -26,11 +26,14 @@ function TransactionHistoryItem({ type, amount, currency}){
     </tr>
     )
 }
- TransactionHistory.protoTypes = {
-    items: PropTypes.arrayOf(PropTypes.exact({
+ TransactionHistory.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.shape({
       id:PropTypes.string.isRequired,
-      type: PropTypes.string,
-      amount: PropTypes.string,
-      currency: PropTypes.string
     }))
+ }
+
+ TransactionHistoryItem.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired
  }
